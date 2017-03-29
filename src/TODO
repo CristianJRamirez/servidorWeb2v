@@ -1,6 +1,3 @@
-gestion de codigo antiguo y nuevo,
+falta modificar el archivo index.htm, para introducir en el body los datos de la ip de quien se conecta y "Cristian J. web modificada"
 
-
-mejorar el antiguo para imprimirlo por la pagina web ( se queda un momento antes de petar),
-
-utilizando el ejemplo nuevo, y acabar el ejercicio
+añadir archivo css para que al leer el html tenga formato
