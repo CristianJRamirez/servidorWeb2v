@@ -1,4 +1,4 @@
-title {
+head {
     padding-left: 11em;
     font-family: Georgia, "Times New Roman",
     Times, serif;
@@ -26,7 +26,10 @@ a:link {
     color: blue }
 a:visited {
     color: purple }
-address {
+body {
     margin-top: 1em;
     padding-top: 1em;
-    border-top: thin dotted }
+    border-top: thin dotted;
+    color: blue ;
+    font-family: Helvetica, Geneva, Arial,
+    SunSans-Regular, sans-serif }

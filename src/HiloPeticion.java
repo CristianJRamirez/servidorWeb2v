@@ -217,6 +217,17 @@ public class HiloPeticion extends Thread{
                 StringTokenizer st = new StringTokenizer(cadena);
 
                 if ((st.countTokens() >= 2) && st.nextToken().equals("GET")) {
+
+                    String añadir = null;
+
+                    añadir="  -> IP: " + newSocket.getInetAddress();
+
+                    añadir+="  \n-> Cristian J : web modificada" ;
+
+                    añadir += "\n</body>\n" ;
+
+                    archivos(añadir);
+
                     retornaFichero(st.nextToken());
                 } else {
                     salida.println("400 Petición Incorrecta");
@@ -225,5 +236,14 @@ public class HiloPeticion extends Thread{
 
         }
         while (cadena != null && cadena.length() != 0);
+    }
+
+
+    void archivos(String añadir) throws IOException {
+        Archivos arch = new Archivos();
+        File fNuevo = new File("index.htm");
+
+        //arch.Escribir(fNuevo,"arclos");
+        arch.modificar(fNuevo,"</body>",añadir);
     }
 }
